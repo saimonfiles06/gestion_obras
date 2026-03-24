@@ -1,0 +1,267 @@
+/*
+Estilos formulario página inicio
+*/
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-size: cover;
+    background: linear-gradient(#ffffff, #0066ff);
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 60px;
+}
+
+.logo-inicio {
+    max-width: 200px;
+    height: auto;
+    display: block;
+}
+
+.boton {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #0A66C2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #0056b3;
+}
+
+
+/*
+Estilos formulario registro
+*/
+
+.registro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.registro-form {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background: #ffffff;
+    text-align: center;
+}
+
+.logo-empresa {
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+.login-link {
+    display: block;
+    margin: 20px 0;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
+
+
+/* Contenedores */
+
+#empleados, .obra-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    min-height: 150px;
+    margin-bottom: 20px;
+}
+
+.empleado {
+    background: #e9ecef;
+    margin: 5px 0;
+    padding: 5px;
+    cursor: grab;
+}
+
+.obra-container {
+    background: #f8f9fa;
+    margin-bottom: 20px;
+}
+
+.obra-container.over {
+    border-color: #0d6efd;
+    background: #e0f0ff;
+}
+
+.obra-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+/* SWITCH EMPLEADO */
+
+.switch-estado {
+    background-color: #dc3545 !important;
+    border-color: #dc3545 !important;
+}
+
+.switch-estado:checked {
+    background-color: #198754 !important;
+    border-color: #198754 !important;
+}
+
+
+
+/* ===================================================== */
+/* OPTIMIZACIÓN PARA PANTALLAS GRANDES (TV 4K - 85") */
+/* ===================================================== */
+
+@media screen and (min-width: 3000px) {
+
+body {
+    font-size: 24px;
+}
+
+/* contenedor general */
+
+.container {
+    max-width: 90%;
+}
+
+/* títulos */
+
+h4 {
+    font-size: 48px;
+}
+
+h5 {
+    font-size: 36px;
+}
+
+/* botones */
+
+.btn {
+    font-size: 26px;
+    padding: 15px 30px;
+}
+
+/* buscadores */
+
+input.form-control {
+    font-size: 24px;
+    padding: 12px;
+}
+
+/* empleados */
+
+.empleado {
+
+    font-size: 26px;
+
+    padding: 15px;
+
+    margin: 10px 0;
+
+    border-radius: 8px;
+}
+
+/* contenedor lista empleados */
+
+#empleados {
+
+    padding: 20px;
+
+    min-height: 300px;
+}
+
+/* obras */
+
+.obra-container {
+
+    padding: 20px;
+
+    min-height: 300px;
+
+    border-radius: 10px;
+}
+
+/* título obra */
+
+.obra-title {
+
+    font-size: 28px;
+
+    margin-bottom: 10px;
+}
+
+/* switch estado */
+
+.switch-estado {
+
+    transform: scale(1.8);
+
+    margin-left: 20px;
+}
+
+/* paginación */
+
+.pagination .page-link {
+
+    font-size: 22px;
+
+    padding: 10px 18px;
+}
+
+/* iconos bootstrap */
+
+.bi {
+
+    font-size: 28px;
+}
+
+/* botones inferiores */
+
+#guardar,
+#restablecer {
+
+    font-size: 28px;
+
+    padding: 15px 35px;
+}
+
+/* formularios registro */
+
+.registro-form {
+
+    max-width: 600px;
+
+    padding: 50px;
+}
+
+/* logos */
+
+.logo-inicio {
+
+    max-width: 350px;
+}
+
+.logo-empresa {
+
+    max-width: 250px;
+}
+
+}
